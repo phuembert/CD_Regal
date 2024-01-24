@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/main.css" type="text/css">
+    <title>Abschlussprojekt</title>
+</head>
+<body>
+    <%- include('./partials/header'); %>
+    
+    <div id="content">
+        <table>
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Künstler</th>
+                        <th>Titel</th>
+                        <th>Recording Studio</th>
+                        <th>Herkunftsland</th>
+                        <th>Jahr</th>
+                        <th>Preis</th>
+                      </tr>
+                </thead>
+            <tbody>
+                <% cds.forEach( album => { %>
+                 <tr>
+                    <td><%= album.id %></td>
+                    <td><%= album.artist %></td>
+                    <td><%= album.title %></td>
+                    <td><%= album.company %></td>
+                    <td><%= album.country %></td>
+                    <td><%= album.year %></td>
+                    <td><%= album.price %>€</td>
+                 </tr>
+               <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <%- include('./partials/footer'); %>
+</body>
+</html>
