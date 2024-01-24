@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/main.css" type="text/css">
+    <title>Abschlussprojekt</title>
+</head>
+<body>
+    <%- include('./partials/header'); %>
+    
+    <div id="content">
+        <h2>Admin-Panel</h2>
+
+        <form action="/admin" method="post">
+            id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  name="id" id="id"><br />
+            title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="title" name="title"><br />
+            artist:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="artist" name="artist"><br />
+            country:&nbsp;&nbsp;&nbsp;&nbsp;<input id="country" name="country"><br />
+            company:&nbsp;<input id="company" name="company"><br />
+            price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="price" name="price"><br />
+            year:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="year" name="year"><br />
+            <input type="submit" value="rein damit">
+        </form>
+    </div>
+    <%- include('./partials/footer'); %>
+</body>
+</html>

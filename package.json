@@ -1,0 +1,27 @@
+{
+  "name": "project_hp",
+  "version": "1.0.0",
+  "description": "project_HP",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "manage",
+    "and",
+    "list",
+    "your",
+    "music",
+    "Discs"
+  ],
+  "author": "HP",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "sequelize": "^6.32.0",
+    "sqlite3": "^5.1.6"
+  }
+}
